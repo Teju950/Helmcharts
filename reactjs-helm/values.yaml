@@ -50,14 +50,14 @@ ingress:
     kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: reactjs-appdevops.work.gd
+    - host: reactjs.appdevops.work.gd
       paths:
         - path: /
           pathType: Prefix
   tls: 
   #  - secretName: tls-secret
   #    hosts:
-    - host: reactjs-appdevops.work.gd
+    - host: reactjs.appdevops.work.gd
   #      - 
 
 resources: 
