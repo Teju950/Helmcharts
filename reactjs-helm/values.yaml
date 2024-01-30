@@ -55,10 +55,9 @@ ingress:
         - path: /
           pathType: Prefix
   tls: 
-  #  - secretName: tls-secret
-  #    hosts:
-    - host: reactjs.appdevops.work.gd
-  #      - 
+   - secretName: tls-secret
+     hosts:
+       - reactjs.appdevops.work.gd
 
 resources: 
   # We usually recommend not to specify default resources and to leave this as a conscious

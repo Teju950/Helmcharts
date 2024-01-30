@@ -52,12 +52,12 @@ ingress:
   hosts:
     - host: nodejs.appdevops.work.gd
       paths:
-        - path: /
+        - path: api/v1/(.*)
           pathType: Prefix
   tls: 
-  #  - secretName: tls-secret
-  #    hosts:
-  #      - nodejs.appdevops.work.gd
+   - secretName: tls-secret
+     hosts:
+       - nodejs.appdevops.work.gd
 
 resources: 
   # We usually recommend not to specify default resources and to leave this as a conscious
