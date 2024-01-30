@@ -52,7 +52,7 @@ ingress:
   hosts:
     - host: nodejs.appdevops.work.gd
       paths:
-        - path: api/v1/welcome
+        - path: api/v1/
           pathType: Prefix
   tls: 
    - secretName: tls-secret
